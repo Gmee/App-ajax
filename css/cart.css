@@ -1,0 +1,22 @@
+.zb_topBar{
+	height: 60px;
+	background: #d3a756;
+}
+.zb_topBar > a{
+	height: 48px;
+	position: absolute;
+	top:0;
+	padding: 4px 20px;
+	background-origin: content-box;
+	background-clip: content-box;
+}
+.zb_topBar > .pic_back{
+	width: 20px;
+	left:0px;
+	background-position: 0 -66px;
+}	
+.zb_topBar > .pic_link{
+	width: 50px;
+	right:0;
+	background-position: -51px 0;
+}

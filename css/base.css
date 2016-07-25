@@ -1,0 +1,51 @@
+/*reset css*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, legend, input, textarea, select, p, blockquote, th, td, img, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+ol,ul{
+	list-style: none;
+}
+body{
+	font-size:14px;
+	font-family: "MicroSoft YaHei",sans-serif;
+}
+fieldset,img {
+    border: 0;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+a:hover{
+	color:#333;
+}
+input{
+	border: 0;
+	outline: none;
+	-webkit-appearance:none;
+}
+
+/*common css*/
+.f_left{
+	float:left;
+}
+.f_right{
+	float:right;
+}
+.clearfix::after,
+.clearfix::before{
+	content:".";
+	line-height: 0;
+	height:0;
+	display:block;
+	visibility:hidden;
+	clear:both;
+}
+[class^="pic_"]{
+	background: url("../images/domen.png") no-repeat;
+	background-size: 100px 400px;/*压缩2倍*/
+}

@@ -1,0 +1,251 @@
+.zb_layout{
+	width: 100%;
+	max-width: 640px;
+	min-width: 300px;
+	position: relative;
+	height: 1000px;
+	margin: 0 auto;
+}
+.zb_header{
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:1000;
+}
+.zb_header > .zb_header_box{
+	height: 60px;
+	width: 100%;
+	max-width: 640px;
+	min-width: 300px;
+	position: relative;
+	background: #d3a756;
+	/*background: rgba();*/
+	margin: 0 auto;
+}
+.zb_header > .zb_header_box > .icon_logo{
+	height: 60px;
+	position: absolute;
+	top:0;
+	left:0;
+}
+.zb_header > .zb_header_box > .seach_box {
+	width: 100px;
+	position: absolute;
+	top:0;
+	right: 0px;
+}
+.zb_header > .zb_header_box > .seach_box > a > img{
+	height: 60px;
+}
+/*轮播图*/
+.zb_banner{
+	width: 100%;
+	position: relative;
+/*	padding-top: 59px;
+*/	overflow: hidden;
+}
+.zb_banner > ul:first-child{
+	width: 1000%;
+	-webkit-transform:translateX(-10%);
+	transform: translateX(-10%);
+}
+.zb_banner > ul:first-child > li{
+	width: 10%;
+	float:left;
+}
+.zb_banner > ul:first-child > li > a{
+	display: block;
+	width: 100%;
+	font-size:0;
+}
+.zb_banner > ul:first-child > li > a >img{
+	width: 100%;
+}
+.zb_banner > ul:last-child{
+	position:absolute;
+	left:50%;
+	margin-left:-46px;
+	bottom:10px;
+}
+.zb_banner > ul:last-child > li{
+	width: 6px;
+	height: 6px;
+	border:1px solid #fff;
+	border-radius: 3px;
+	float:left;
+	margin-left: 10px;
+}
+.zb_banner > ul:last-child > li.now{
+	background: #fff;
+}
+.zb_banner > ul:last-child > li:first-child{
+	margin-left: 0px;
+}
+/*导航栏*/
+.zb_nav{
+	width: 100%;
+	border-bottom: 1px solid #e0e0e0;
+	padding:15px 0;
+}
+.zb_nav li{
+	width:25%;
+	float: left;
+	margin: 5px 0;
+}
+.zb_nav li > a{
+	display: block;
+	width: 100%;
+}
+.zb_nav li > a >img{
+	width: 60px;
+	height: 60px;
+	margin:0 auto;
+	display: block;
+	margin-top: 5px;
+}
+.zb_nav li > a > p{
+	font-size:16px;
+	line-height: 16px;
+	text-align: center;
+	color:#666;
+	margin-top: 5px;
+}
+/*商品展示*/
+.zb_main{
+
+}
+.zb_product{
+	width: 100%;
+}
+.zb_product > .zb_product_tit{
+	height: 32px;
+	line-height: 28px;
+	padding:5px 0px;
+}
+.zb_product > .zb_product_tit > h3{
+	font-weight: normal;
+	font:16px;
+	font-weight: bold;
+	color:#666;
+	position: relative;
+	padding-left: 20px;
+	margin: 0px;
+}
+.zb_product > .zb_product_tit > h3::before{
+	content:"";
+	width: 3px;
+	height: 20px;
+	background: red;
+	position: absolute;
+	top:3px;
+	left:5px;	
+}
+.zb_product > .zb_product_tit > .zb_more{
+	margin-right: 10px;
+	font:200 16px/28px "MicroSoft YaHei",sans-serif;
+}
+.zb_product > .zb_product_con{
+	width: 100%;
+}
+.sp_product{
+	width: 100%;
+}
+.w_50{
+	display: block;
+	width: 48%;
+}
+.w_50 > a{
+	width: 100%;
+	display: block;
+}
+.w_50 > a >img{
+	width: 64%;
+	display: block;
+	margin:0 auto;
+}
+.sp_product > li{
+	border: 1px solid #e0e0e0;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+.sp_product > li > p{
+	padding-left: 25px;
+	font:16px;
+	color:#515151;
+}
+.sp_product > li > p:nth-of-type(1){
+	font-weight: bold;
+	color:#d8505c;
+}
+.sp_product > li > p:nth-of-type(4){
+	color:#ccc;
+}
+/*广告*/
+.zb_add{
+	width: 100%;
+	background: #f6f6f6;
+	padding: 30px 0;
+}
+.zb_add > a{
+	display: block;
+}
+.zb_add img{
+	display: block;
+	width: 100%;
+}
+/*品牌展示*/
+.zb_pin_con{
+	width: 100%;
+	height: 192px;
+}
+.w_25{
+	display: block;
+	width: 24%;
+}
+.w_25 > img{
+	display: block;
+	width: 100%;
+}/*jqzy!!!*/
+.zb_pin_con > a{
+	border: 1px solid #e0e0e0;
+}
+.zb_pin_con > a{
+	border-left:0;
+}
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

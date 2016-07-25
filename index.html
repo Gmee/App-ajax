@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/><!-- meta:vp -->
+	<title>APP</title>
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/index.css"/>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<!-- 模拟商品区Ajax -->
+	<!-- <script src="js/jquery-1.9.1.min.js"></script> -->
+	<!--<script>
+		// $(function(){
+		// 	LoadProducts();
+		// });
+		// function LoadProducts(){
+		// 	var datas=[{id:1,name:'七里香',img:'img/1.png',price:88},{id:2,name:'七里香2',img:'img/2.png',price:82},{id:3,name:'七里香3',img:'img/3.png',price:83},{id:4,name:'七里香4',img:'img/4.png',price:84}];
+		// 	$.post('url',function(data){
+		// 		if(data.length<=0){
+		// 			alert("没有数据");
+		// 		}else{
+		// 			$.each(data,function(index,item){
+		// 				if(index%2==0){
+		// 					productsInsert(item,"left");
+		// 				}
+		// 				else{
+		// 					productsInsert(item,"right");
+		// 				}
+		// 			});
+		// 		}
+		// 	},"json");
+		// }
+		// function productsInsert(item,cssName){
+		// 	var li="<li class=\"w_50 f_"+cssName+"\"><a href=\"detail.html?id="+item.id+"\"><img src=\""+item.img+"\" alt=\"\"></a><p>&yen; 88</p><p>销量： 41</p><p>"+item.name+"</p><p>"+item["name"]+"</p></li>";
+		// 	$("#products").append(li);
+		// }
+	</script>-->
+</head>
+<body>
+	<!-- 主体集合 -->
+	<div class="zb_layout">
+		<!-- 头部  start -->
+		<header class="zb_header">
+			<div class="zb_header_box">
+				<div class="icon_logo">
+					<a href="#" ><img src="images/logo.png" alt="" style="height: 60px;"/></a>
+				</div>
+				<div class="seach_box">
+					<a href="#"><img src="images/sh.png" alt="" style="margin-right: 10px;"></a>
+					<a href="#"><img src="images/shop.png" alt="" ></a>
+					<!-- <form action="#"><input type="search" placeholder="搜索" /></form>-->
+				</div>
+			</div>
+		</header>
+		<!-- 头部  end -->
+
+		<!-- 轮播图  start -->
+		<div class="zb_banner">
+			<ul class="clearfix">
+				<li><a href="#"><img src="images/bg6.png" alt=""></a></li>
+				<li><a href="#"><img src="images/bg1.png" alt=""></a></li>
+				<li><a href="#"><img src="images/bg2.png" alt=""></a></li>
+				<li><a href="#"><img src="images/bg3.png" alt=""></a></li>
+				<li><a href="#"><img src="images/bg4.png" alt=""></a></li>
+				<li><a href="#"><img src="images/bg5.png" alt=""></a></li>
+				<li><a href="#"><img src="images/bg6.png" alt=""></a></li>
+				<li><a href="#"><img src="images/bg1.png" alt=""></a></li>
+			</ul>
+			<ul>
+				<li class="now"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<!-- 轮播图  end -->
+
+		<!-- 导航栏  start -->
+		<div class="zb_nav">
+			<ul class="clearfix">
+				<li><a href="#"><img src="images/nav0.png" alt=""><p>黄金</p></a></li>
+				<li><a href="#"><img src="images/nav1.png" alt=""><p>K金</p></a></li>
+				<li><a href="#"><img src="images/nav2.png" alt=""><p>钻石</p></a></li>
+				<li><a href="#"><img src="images/nav3.png" alt=""><p>翡翠</p></a></li>
+				<li><a href="#"><img src="images/nav4.png" alt=""><p>银饰</p></a></li>
+				<li><a href="#"><img src="images/nav5.png" alt=""><p>珍珠</p></a></li>
+				<li><a href="#"><img src="images/nav6.png" alt=""><p>金镶玉</p></a></li>
+				<li><a href="#"><img src="images/nav7.png" alt=""><p>更多</p></a></li>
+			</ul>
+		</div>
+		<!-- 导航栏  end -->
+
+		<!-- 主体  start -->
+		<main class="zb_main">
+			<section class="zb_product">
+				<!-- 商品详细区 -->
+				<div class="zb_product_tit clearfix">
+					<h3 class="f_left">热门产品</h3>
+					<a href="#" class="zb_more f_right">更多></a>
+				</div>
+				<div class="zb_product_con ">
+					<ul class="sp_product clearfix" id="products">
+						<li class="w_50 f_left">
+							<a href="#"><img src="images/sp1.png" alt=""></a>
+							<p>&yen; 88</p>
+							<p>销量： 41</p>
+							<p>七里香一生平安沙绒车挂</p>
+							<p>七里香·开云黄金屋</p>
+						</li>
+						<li class="w_50 f_right">
+							<a href="#"><img src="images/sp2.png" alt=""></a>
+							<p>&yen; 150</p>
+							<p>销量： 41</p>
+							<p>七里香一生平安沙绒车挂</p>
+							<p>七里香·开云黄金屋</p>
+						</li>
+						<li class="w_50 f_left">
+							<a href="#"><img src="images/sp1.png" alt=""></a>
+							<p>&yen; 88</p>
+							<p>销量： 41</p>
+							<p>七里香一生平安沙绒车挂</p>
+							<p>七里香·开云黄金屋</p>
+						</li>
+						<li class="w_50 f_right">
+							<a href="#"><img src="images/sp2.png" alt=""></a>
+							<p>&yen; 150</p>
+							<p>销量： 41</p>
+							<p>七里香一生平安沙绒车挂</p>
+							<p>七里香·开云黄金屋</p>
+						</li>
+						<li class="w_50 f_left">
+							<a href="#"><img src="images/sp1.png" alt=""></a>
+							<p>&yen; 88</p>
+							<p>销量： 41</p>
+							<p>七里香一生平安沙绒车挂</p>
+							<p>七里香·开云黄金屋</p>
+						</li>
+						<li class="w_50 f_right">
+							<a href="#"><img src="images/sp2.png" alt=""></a>
+							<p>&yen; 150</p>
+							<p>销量： 41</p>
+							<p>七里香一生平安沙绒车挂</p>
+							<p>七里香·开云黄金屋</p>
+						</li>
+						<li class="w_50 f_left">
+							<a href="#"><img src="images/sp1.png" alt=""></a>
+							<p>&yen; 88</p>
+							<p>销量： 41</p>
+							<p>七里香一生平安沙绒车挂</p>
+							<p>七里香·开云黄金屋</p>
+						</li>
+						<li class="w_50 f_right">
+							<a href="#"><img src="images/sp2.png" alt=""></a>
+							<p>&yen; 150</p>
+							<p>销量： 41</p>
+							<p>七里香一生平安沙绒车挂</p>
+							<p>七里香·开云黄金屋</p>
+						</li>
+						<li class="w_50 f_left">
+							<a href="#"><img src="images/sp1.png" alt=""></a>
+							<p>&yen; 88</p>
+							<p>销量： 41</p>
+							<p>七里香一生平安沙绒车挂</p>
+							<p>七里香·开云黄金屋</p>
+						</li>
+						<li class="w_50 f_right">
+							<a href="#"><img src="images/sp2.png" alt=""></a>
+							<p>&yen; 150</p>
+							<p>销量： 41</p>
+							<p>七里香一生平安沙绒车挂</p>
+							<p>七里香·开云黄金屋</p>
+						</li>
+					</ul>
+				</div>
+				<!-- 活动广告 -->
+				<div class="zb_add">
+					<a href="#"><img src="images/add.png" alt=""></a>
+				</div>
+				<!-- 品牌展示区 -->
+				<div class="zb_product_tit clearfix">
+					<h3 class="f_left">热门品牌</h3>
+					<a href="#" class="zb_more f_right">更多></a>
+				</div>
+				<div class="zb_pin_con clearfix">
+					<a href="#" class="w_25 f_left"><img src="images/p1.png" alt=""></a>
+					<a href="#" class="w_25 f_left"><img src="images/p2.png" alt=""></a>
+					<a href="#" class="w_25 f_left"><img src="images/p3.png" alt=""></a>
+					<a href="#" class="w_25 f_left"><img src="images/p4.png" alt=""></a>
+				</div>
+			</section>
+		</main>
+		<!-- 主体  end -->		
+	</div>
+
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
